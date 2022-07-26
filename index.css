@@ -10,7 +10,7 @@
 /* page1 */
 .navbar {
     padding: 0;
-    background-image: url('/img/Group543.png');
+    background-image: url('img/Group543.png');
     background-repeat: no-repeat;
     overflow: hidden;
     height: 120px;
@@ -28,7 +28,7 @@
     text-align: left;
 }
 .swap-container {
-    background-image: url('/img/Group353.png');
+    background-image: url('img/Group353.png');
     height: 520px;
     padding: 12px 22px 50px 25px;
 }
@@ -159,7 +159,7 @@
 /* End Page 1 */
 /* Result search car*/
 .swap-container-result {
-    background-image: url('/img/Group353.png');
+    background-image: url('img/Group353.png');
     /* height: 520px; */
 }
 .swap-container-result .box-information {
@@ -194,7 +194,7 @@
 }
 .swap-container-result .date-received {
     padding-left: 18px;
-    background-image: url('/img/Group559.png');
+    background-image: url('img/Group559.png');
     background-repeat: no-repeat;
     background-position: 100% 13px;
 }
@@ -538,7 +538,7 @@
     padding: 14px 49px 23px 22px;
     background-color: #E4F5EB;
     border-radius: 15px;
-    background-image: url('/img/Group559.png');
+    background-image: url('img/Group559.png');
     background-repeat: no-repeat;
     background-position: 100% 30px;
 }
@@ -613,7 +613,7 @@
     padding: 14px 22px 20px 22px;
     background-color: #FFE5E8;
     border-radius: 15px;
-    background-image: url('/img/Group559.png');
+    background-image: url('img/Group559.png');
     background-repeat: no-repeat;
     background-position: 100% 0;
 }
@@ -661,7 +661,7 @@
     padding: 14px 22px 20px 22px;
     background-color: #D9F9F6;
     border-radius: 15px;
-    background-image: url('/img/Group559.png');
+    background-image: url('img/Group559.png');
     background-repeat: no-repeat;
     background-position: 100% 2px;
 }
@@ -716,7 +716,7 @@
     padding: 14px 22px 27px 22px;
     background-color: #EEEBFF;
     border-radius: 15px;
-    background-image: url('/img/Group559.png');
+    background-image: url('img/Group559.png');
     background-repeat: no-repeat;
     background-position: 100% 8px;
 }
@@ -765,7 +765,7 @@
     padding: 14px 22px 27px 22px;
     background-color: #FDEBDD;
     border-radius: 15px;
-    background-image: url('/img/Group559.png');
+    background-image: url('img/Group559.png');
     background-repeat: no-repeat;
     background-position: 100% 0;
 }
@@ -812,7 +812,7 @@
     padding: 14px 22px 20px 22px;
     background-color: #F2FDDD;
     border-radius: 15px;
-    background-image: url('/img/Group559.png');
+    background-image: url('img/Group559.png');
     background-repeat: no-repeat;
     background-position: 100% 0;
 }

@@ -40,7 +40,7 @@ table {
         width: 100vw;
         height: 100vh;
         background-color: #E8F6EF;
-        background-image: url(/img/bg.png);
+        background-image: url(img/bg.png);
         background-repeat: no-repeat;
         background-position: 100% -2.5rem;
         background-size: 21rem auto;
@@ -406,7 +406,7 @@ table {
         width: 17px;
         height: 17px;
         cursor: pointer;
-        background-image: url('/img/Rectangle266.png');
+        background-image: url('img/Rectangle266.png');
         margin-bottom: 20px;
     } 
     
@@ -415,7 +415,7 @@ table {
     #modalCarCompany INPUT[type=checkbox]:checked,
     #modalCarTransmission INPUT[type=checkbox]:checked{
         background-color: #409fd6;
-        background-image: url('/img/Group616.png');
+        background-image: url('img/Group616.png');
     }
     
     .form-check-input {
