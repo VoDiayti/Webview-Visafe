@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/resources/css/fitter.css">
+<title>Title</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="close">
+                <img src="/img/icon-x.png" alt="X">
+            </div>
+            <div class="head_title">
+                <h1>Bộ lọc</h1>
+            </div>
+            <div class="main_content">
+                <div class="fill">
+                    <div class="fill_content">
+                        <span class="cate">Loại xe</span>
+                        <div class="choice" data-toggle="modal" data-target="#modalCarType">Tất cả
+                            <img src="/img/back.png" alt="back" class="ml-4">
+                        </div>
+                    </div>
+                    <div class="fill_content">
+                        <span class="cate">Hãng xe</span>
+                        <div class="choice" data-toggle="modal" data-target="#modalCarCompany">Tất cả
+                            <img src="/img/back.png" alt="back" class="ml-4">
+                        </div>
+                    </div>
+                    <div class="fill_content">
+                        <span class="cate">Truyền động</span>
+                        <div class="choice" data-toggle="modal" data-target="#modalCarTransmission">Tất cả
+                            <img src="/img/back.png" alt="back" class="ml-4">
+                        </div>
+                    </div>
+                    <div class="fill_content">
+                        <span class="cate">Chấp nhận Passport</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="fill_content">
+                        <span class="cate">Hỗ trợ bảo hiểm</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="fill_content fill_content--border-none" id="fill_adv">
+                        <span class="cate">Bộ lọc nâng cao</span>
+                        <div class="icon_ar">
+                            <img src="/img/back.png" alt="back">
+                        </div>
+                    </div>
+                    <div class="fill_sub" id="fill_adv_sub">
+                        <div class="fill_content">
+                            <span class="cate cate-hover mr-auto" >Tính năng</span>
+                            <div class="choice mr-4" data-toggle="modal" data-target="#modalFeature">Lựa chọn</div>
+                            <div id="show">
+                                <img src="/img/back.png" alt="back" >
+                            </div>
+                        </div>
+                        <div class="fill_content fill_content_list_selector" id="list_selector" style="display:none;">
+                            <div class="option"><span>Camera lùi</span></div>
+                            <div class="option"><span>Cửa sổ trời</span></div>
+                            <div class="option"><span>Định vị GPS</span></div>
+                        </div>
+                        <div class="fill_content fill_content--input1">
+                            <span class="cate">Số ghế</span>
+                            <div class="choice choice--small">Tất cả</div>
+                        </div>
+                        <div class="fill_content fill_content--pd-none">
+                            <div class="range-wrap">
+                                <div class="range-value" id="rangeV"></div>
+                                <input id="range" type="range" min="1" max="12" value="4" step="1">
+                            </div>
+                        </input>
+                        </div>
+                        <div class="fill_content fill_content--input2">
+                            <span class="cate">Năm sản xuất</span>
+                            <div class="choice choice--small">Tất cả</div>
+                        </div>    
+                        <div class="fill_content fill_content--pd-none">
+                            <div class="range-wrap range-wrap-02">
+                                <div class="range-value" id="rangeV2"></div>
+                                <input id="range2" type="range" min="2013" max="2020" value="2015" step="1">
+                            </div>           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal type car -->
+      <div class="modal fade" id="modalCarType" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-item">
+                    <img class="back" data-dismiss="modal" aria-label="Close" src="/img/return.png" alt="">
+                    <h5 class="return modal-title" id="exampleModalLongTitle1">Loại xe</h5>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="option">
+                    <label class="form-check-label" for="input-all">
+                        <input id="input-all" type="checkbox" class="" value="0" placeholder="Value">
+                       <span>Tất cả</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-4">
+                        <input id="input-4" type="checkbox" class="cb-elm" value="0" placeholder="Value">
+                        <span>4 chỗ</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-7">
+                        <input id="input-7" type="checkbox" class="cb-elm" value="0" placeholder="Value">
+                        <span>7 chỗ</span>
+                    </label>
+                </div>
+
+                <div class="option">
+                    <label class="form-check-label" for="input-16">
+                        <input id="input-16" type="checkbox" class="cb-elm" value="0" placeholder="Value">
+                        <span>16 chỗ</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-29">
+                        <input id="input-29" type="checkbox" class="cb-elm" value="0" placeholder="Value">
+                       <span>29 chỗ</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-45">
+                        <input id="input-45" type="checkbox" class="cb-elm" value="0" placeholder="Value">
+                        <span>45 chỗ</span>
+                    </label>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <div class="box-img">
+                    <img src="/img/img-car.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    <!-- Modal car Company -->
+    <div class="modal fade" id="modalCarCompany" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-item">
+                    <img class="back" data-dismiss="modal" aria-label="Close" src="/img/return.png" alt="">
+                    <h5 class="return modal-title" id="exampleModalLongTitle1">Hãng xe</h5>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="option">
+                    <label class="form-check-label" for="input-cp-all">
+                        <input id="input-cp-all" type="checkbox" value="0" placeholder="Value">
+                       <span>Tất cả</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-47">
+                        <input id="input-47" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>VinFast</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-87">
+                        <input id="input-87" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>Mazda</span>
+                    </label>
+                </div>
+
+                <div class="option">
+                    <label class="form-check-label" for="input-99">
+                        <input id="input-99" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>Toyota</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-10">
+                        <input id="input-10" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                       <span>Mercedes-benz</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-22">
+                        <input id="input-22" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>Lexus</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-21">
+                        <input id="input-21" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>Ford</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-13">
+                        <input id="input-13" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>Hyundai</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-14">
+                        <input id="input-14" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>Porsche</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-55">
+                        <input id="input-55" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>Honda</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-36">
+                        <input id="input-36" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>BMW</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-44">
+                        <input id="input-44" type="checkbox" class="cb-elm-cp" value="0" placeholder="Value">
+                        <span>Audi</span>
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="box-img">
+                    <img src="/img/img-car.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+
+    <!-- Modal car Transmission -->
+    <div class="modal fade" id="modalCarTransmission" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-item">
+                    <img class="back" data-dismiss="modal" aria-label="Close" src="/img/return.png" alt="">
+                    <h5 class="return modal-title" id="exampleModalLongTitle1">Truyền động</h5>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="option">
+                    <label class="form-check-label" for="input-tm-all">
+                        <input id="input-tm-all" type="checkbox" class="" value="0" placeholder="Value">
+                       <span>Tất cả</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-188">
+                        <input id="input-188" type="checkbox" class="cb-elm-tm" value="0" placeholder="Value">
+                        <span>Xe số tự động</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <label class="form-check-label" for="input-43">
+                        <input id="input-43" type="checkbox" class="cb-elm-tm" value="0" placeholder="Value">
+                        <span>Xe số sàng</span>
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="box-img">
+                    <img src="/img/img-car.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+    
+    <!-- Modal Feature -->
+    <div class="modal fade" id="modalFeature" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-item">
+                    <img class="back" data-dismiss="modal" aria-label="Close" src="/img/return.png" alt="">
+                    <h5 class="return modal-title" id="exampleModalLongTitle1">Tính năng</h5>
+                </div>
+            </div>
+            <div class="modal-body" id="activeBtn">
+                <button class="btn btn-action">Bluetooth</button>
+                <button class="btn btn-action active">Camera lùi</button>
+                <button class="btn btn-action active">Cửa sổ trời</button>
+                <button class="btn btn-action">Ghế trẻ em </button>
+                <button class="btn btn-action">Khe cắm USB</button>
+                <button class="btn btn-action">Khe cắm AUX</button>
+                <button class="btn btn-action">Mui trần</button>
+                <button class="btn btn-action active">Định vị GPS</button>
+            </div>
+            <div class="modal-footer">
+                <div class="box-img">
+                    <img src="/img/img-car.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+
+<script src="https:cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+<script src="/resources/js/app.js"></script>
+<script>
+    $('.close').click(function() {
+        window.location.href='homepage.html';
+    })
+    $('.btn-action').click(function() {
+        $(this).toggleClass('active');
+    })
+
+</script>
+</html>

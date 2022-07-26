@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/resources/css/index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=The+Nautigal&display=swap" rel="stylesheet">
+<title>Home</title>
+</head>
+<body>
+    <div class="wrapper">
+       <nav class="navbar navbar-fixed-top">
+           <p class="text-header">Tìm kiếm xe thuê theo nhu cầu của bạn</p>
+       </nav>
+       <div class="swap-container">
+            <div class="box-address-local">
+                <div class="address-local">
+                    <input type="text" value="145 Lê Văn Hưu, phường ABCD 145 Lê Văn Hưu, phường ABCD 145 Lê Văn Hưu, phường ABCD" class="text-address">
+                </div>
+                <div class="local-address">
+                    <img src="/img/Group44.png" alt="">
+                </div>
+            </div>
+            <div class="box-timeline-car">
+                <div class="date-received w-100">
+                    <p class="text-date">Ngày nhận xe</p>
+                    <div class="d-flex justify-content-between date-received1">
+                        <div class="box-calendar">
+                            <img src="/img/calendar.png" alt="">
+                            <input type="text" value="16/03/2022" class="text-input">
+                        </div>
+                        <div class="box-timeline">
+                            <img src="/img/fast-time.png" alt="">
+                            <input type="text" value="08:00" class="text-input">
+                        </div>
+                    </div>
+                    <p class="text-date">Ngày về</p>
+                    <div class="d-flex justify-content-between">
+                        <div class="box-calendar">
+                            <img src="/img/calendar.png" alt="">
+                            <input type="text" value="16/03/2022" class="text-input">
+                        </div>
+                        <div class="box-timeline">
+                            <img src="/img/fast-time.png" alt="">
+                            <input type="text" value="08:00" class="text-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-driver">
+                <input type="checkbox" id="check-more" name="check-more">
+                <label for="check-more" class="check-more">
+                    Chọn tài xế di chuyển theo
+                </label>
+            </div>
+            <div class="box-search-car">
+                <button class="btn btn-search-car">Tìm xe ngay</button>
+            </div>
+       </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+<script>
+    $('.btn-search-car').click(function() {
+        window.location.href='/resources/views/home/homepage.html';
+    })
+</script> 
+    
+</body>
+</html>
